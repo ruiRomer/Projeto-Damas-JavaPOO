@@ -1,6 +1,8 @@
 package damas;
 
 import boardgame.Board;
+import boardgame.Position;
+import damas.pieces.Black;
 
 public class CheckersMatch {
 	
@@ -8,6 +10,7 @@ public class CheckersMatch {
 	
 	public CheckersMatch() {
 		board = new Board(8,8);
+		initialSetup();
 	}
 	
 	public CheckersPiece[][] getPieces(){
@@ -20,6 +23,10 @@ public class CheckersMatch {
 		
 		return mat;
 		
+	}
+	
+	private void initialSetup() {
+		board.placePiece(new Black(board, Color.BLACK), new Position(2,1));
 	}
 	
 }
