@@ -1,13 +1,13 @@
-package damas;
+package chess;
 
 import boardgame.Board;
 import boardgame.Piece;
 
-public class CheckersPiece extends Piece {
+public class ChessPiece extends Piece {
 
 	private Color color;
 
-	public CheckersPiece(Board board, Color color) {
+	public ChessPiece(Board board, Color color) {
 		super(board);
 		this.color = color;
 	}

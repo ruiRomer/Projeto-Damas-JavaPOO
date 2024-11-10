@@ -1,13 +1,13 @@
 package app;
 
 import boardgame.Board;
-import damas.CheckersMatch;
+import chess.ChessMatch;
 
 public class Program {
 
 	public static void main(String[] args) {
 		
-		CheckersMatch checkersMatch = new CheckersMatch();
+		ChessMatch checkersMatch = new ChessMatch();
 		UI.printBoard(checkersMatch.getPieces());
 	}
 
